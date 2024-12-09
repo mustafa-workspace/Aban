@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- new fonts -->
+  <link rel="stylesheet" href="./css/libs/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/libs/all.min.css">
+  <!-- plugins -->
+  <link type="text/css" href="./css/plugins/editor.css" rel="stylesheet">
+  <link type="text/css" href="./css/plugins/tagify.css" rel="stylesheet">
+  <!--  froon style file -->
+  <link rel="stylesheet" href="./css/aban.css">
+  <!-- logo -->
+  <link rel="icon" href="./imgs/logo/aban-logo.png" type="image/gif">
+  <title>Faroon | Add Article </title>
+  <body>
+    <!-- header -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <button class="addarticlebtn btn btn-outline-primary rounded-circle ml-2"><i class="fas fa-plus"></i> </button>
+    </nav>
+    <!-- end header-->
+    <!-- content-->
+    <div class="faroon"> 
+      <div class="container mt-5">
+        <div class="content"> 
+          <div class="row">
+            <div class="col-lg-8">
+              <div class="addarticle card border-0 mb-3 p-3">
+                <div class="form-groups mb-2">
+                  <input class="form-control form-control-lg border-0" type="text" placeholder="Title Here... ! ">
+                </div>
+                <div class="box mb-3"> 
+                  <!-- plugin editor -->
+                  <textarea class="form-control form-control-lg border-0 textBox"></textarea>
+                </div>
+                <div class="tags mb-3"> 
+                  <label class="title">tags</label>
+                  <!-- plugin tagify -->
+                  <textarea class="form-control" name="tags" placeholder="write some tags"></textarea>
+                </div>
+                <label class="title">Time & Date</label>
+                <div class="row">
+                  <div class="col-lg-6">
+                    <div class="form-groups mb-2">
+                      <input class="form-control form-control-md border-0 timepicker" type="text" placeholder="Time..">
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="form-groups mb-2">
+                      <input class="form-control form-control-md border-0 datepicker" type="text" placeholder="Date..">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- active message -->
+      <div class="showactive card"> <i class="fas fa-heart text-danger"> </i>
+        <p class="desc_info">
+           Your Add this artice in favoraite box</p>
+      </div>
+      <!-- all audios -->
+      <audio class="save_notify">
+        <source src="media/notify_save.mp3" type="audio/mp3">
+      </audio>
+      <audio class="notify_love">
+        <source src="media/notify_love.mp3" type="audio/mp3">
+      </audio>
+      <audio class="notify">
+        <source src="media/notif.mp3" type="audio/mp3">
+      </audio>
+    </div>
+    <!-- ./ content-->
+    <!-- nav mobile -->
+    <div class="nav-mobile">
+      <div class="btn btn-primary btn-sm btn_nav"><i class="fas fa-list"></i></div>
+      <div class="the-nav"> 
+        <ul class="list-unstyled"> 
+          <li class="mb-3"><a href="index.html"><i class="fas fa-home"></i></a></li>
+          <li class="mb-3"><a href="trends.html"><i class="fas fa-fire"></i></a></li>
+          <li class="mb-3"><a href="blogger.html"><i class="fas fa-users"></i></a></li>
+          <li class="mb-3"><a href="addarticle.html"><i class="fas fa-plus"></i></a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- Footer and scripts -->
+    <script src="js/libs/query.js"></script>
+    <script src="js/libs/bootstrap.bundle.min.js"></script>
+    <script src="js/libs/bootstrap.js"></script>
+    <script src="js/libs/all.min.js"></script>
+    <script src="js/plugins/editor.js"></script>
+    <script src="js/plugins/jQuery.tagify.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
